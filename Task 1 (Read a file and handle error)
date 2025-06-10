@@ -1,6 +1,7 @@
 def file_lines_with_numbers(filename):
     try:
         with open(filename,'r') as file:
+            print("Reading file content:")
             for line_serial, line in enumerate(file,1):
                 print(f"Line {line_serial}: {line.strip()}")
     except FileNotFoundError:
@@ -8,5 +9,5 @@ def file_lines_with_numbers(filename):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-file1="debolina1.txt"
+file1="sample.txt"
 file_lines_with_numbers(file1)
