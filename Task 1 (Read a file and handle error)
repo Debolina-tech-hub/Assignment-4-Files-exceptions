@@ -2,6 +2,7 @@ try:
     file1=open('sample.txt','r')
     reading_file=file1.readlines()
     s=len(reading_file)
+    print ("Reading file content: \t")
     for i in range(s):
         print(f"Line{i}: ",reading_file[i])
 except FileNotFoundError:
